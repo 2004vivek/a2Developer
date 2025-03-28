@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.swiper-pagination {
+  right: 0% !important;
+  top: 50% !important;
+  transform: translate(97%, -20%) !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  background: hsl(0, 0%, 100%) !important;
+  opacity: 0.9 !important;
+} 
+.swiper-pagination-bullet-active {
+  background: red !important;
+  opacity: 1 !important;
+}  
+@media only screen and (max-width:475px){
+  .swiper-pagination{
+    bottom: 5% !important;
+    top: auto !important;
+    right: 50% !important;
+    left: auto !important;
+    transform: translateX(50%) !important;
+    flex-direction: row !important;
+    width: auto !important;
+  }
+}
