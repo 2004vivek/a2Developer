@@ -24,7 +24,7 @@ export default function Modal({ isOpen, onClose }) {
   const submitHandler=async(e)=>{
     e.preventDefault();
     try {
-        const response=await axios.post("http://localhost:3000/api/user",formData)
+        const response=await axios.post("https://a2developer.onrender.com/api/user",formData)
         console.log(response.data.success)
         toast.success(response.data.message)
         setFormData({  
